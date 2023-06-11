@@ -1,0 +1,39 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: variables.$background-dark-color;
+  color: variables.$primary-color;
+
+  &__nav {
+    @include mixins.justify;
+    justify-content: space-between;
+  }
+
+  &__brand {
+    @include mixins.justify;
+    padding: variables.$spacing-s;
+    @media (min-width: 64em) {
+      width: 50%;
+    }
+  }
+
+  &__links {
+    @include mixins.justify;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: variables.$background-cream-color;
+
+    @media (min-width: 64em) {
+      position: static;
+      width: auto;
+      background: none;
+    }
+  }
+}

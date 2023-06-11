@@ -1,0 +1,62 @@
+@use "../settings/variables";
+
+.link {
+  color: variables.$text-color;
+  font-size: variables.$fs-menu;
+  text-decoration: none;
+  padding: variables.$spacing-xs variables.$spacing-s;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  @media (min-width: 64em) {
+    padding: variables.$spacing-s variables.$spacing-m;
+    background-color: variables.$background-dark-color;
+    color: variables.$primary-color;
+  }
+
+  &:hover {
+    @media (min-width: 64em) {
+      color: variables.$text-color;
+      background: variables.$background-cream-color;
+      text-decoration: none;
+    }
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+
+  &__footer {
+    padding: variables.$spacing-s 1.2rem;
+    background-color: variables.$background-dark-color;
+    color: variables.$primary-color;
+    text-decoration: none;
+    &:hover {
+      color: variables.$text-color;
+      background: variables.$background-cream-color;
+      text-decoration: none;
+    }
+
+    &--rrss {
+      color: variables.$text-second-color;
+      text-decoration: none;
+      padding: variables.$spacing-s variables.$spacing-m;
+      &:hover {
+        color: variables.$text-color;
+        background: variables.$background-cream-color;
+        text-decoration: none;
+      }
+    }
+  }
+}

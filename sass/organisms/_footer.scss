@@ -1,0 +1,21 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.footer {
+  background-color: variables.$background-dark-color;
+  padding: variables.$spacing-s;
+
+  &__links {
+    @include mixins.justify;
+    width: 100%;
+    margin-bottom: 20px;
+    @media (min-width: 64em) {
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+
+    a:hover {
+      color: variables.$text-color;
+    }
+  }
+}

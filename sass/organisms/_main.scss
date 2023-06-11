@@ -1,0 +1,39 @@
+@use "../settings/variables";
+
+.section {
+  background-color: variables.$background-cream-color;
+}
+
+.container {
+  background-color: variables.$background-lighter-color;
+  @media (min-width: 48em) {
+    height: 100vh;
+  }
+  @media (min-width: 64em) {
+    display: flex;
+    background-color: variables.$background-lighter-color;
+    padding: 0;
+  }
+
+  &__main {
+    padding: 0;
+    @media (min-width: 64em) {
+      padding: 1rem 1.25rem;
+    }
+  }
+  &__aside {
+    display: none;
+    @media (min-width: 64em) {
+      background-color: variables.$background-mint-color;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      &--box {
+        background-color: variables.$background-cream-color;
+        height: 240px;
+        width: 350px;
+        margin: 2rem 2rem 0 2rem;
+      }
+    }
+  }
+}

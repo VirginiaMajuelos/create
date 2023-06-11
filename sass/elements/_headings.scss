@@ -1,0 +1,23 @@
+@use "../settings/variables";
+@use "../settings/layout";
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.13;
+  // margin: variables.$spacing-s;
+}
+
+h1 {
+  font-size: variables.$fs-title-m;
+  @media (min-width: 64em) {
+    font-size: variables.$fs-title-l;
+  }
+}
+
+h2 {
+  font-size: variables.$fs-title-s;
+  @media (min-width: 64em) {
+    font-size: variables.$fs-title-m;
+  }
+}

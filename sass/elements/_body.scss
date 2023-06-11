@@ -1,0 +1,8 @@
+@use "../settings/variables";
+
+body {
+  color: variables.$text-color;
+  font-family: variables.$font-family;
+  font-size: variables.$fs-text-s;
+  line-height: 1.8;
+}
