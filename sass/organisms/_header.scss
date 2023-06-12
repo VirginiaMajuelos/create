@@ -11,14 +11,16 @@
 
   &__nav {
     @include mixins.justify;
-    justify-content: space-between;
+    @media (min-width: 64em) {
+      justify-content: space-between;
+    }
   }
 
   &__brand {
     @include mixins.justify;
     padding: variables.$spacing-s;
     @media (min-width: 64em) {
-      width: 50%;
+      width: 40%;
     }
   }
 
@@ -32,7 +34,8 @@
 
     @media (min-width: 64em) {
       position: static;
-      width: auto;
+      width: 50%;
+      margin-right: variables.$spacing-xl;
       background: none;
     }
   }

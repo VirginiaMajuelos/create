@@ -10,10 +10,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: variables.$spacing-s variables.$spacing-m;
     @media (min-width: 64em) {
       flex-wrap: nowrap;
+      justify-content: space-around;
     }
   }
 }

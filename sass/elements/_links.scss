@@ -20,9 +20,10 @@
   }
 
   @media (min-width: 64em) {
-    padding: variables.$spacing-s variables.$spacing-m;
+    padding: variables.$spacing-s 3.6rem;
     background-color: variables.$background-dark-color;
     color: variables.$primary-color;
+    justify-content: center;
   }
 
   &:hover {

@@ -371,9 +371,10 @@ img {
 }
 @media (min-width: 64em) {
   .link {
-    padding: 1rem 1.6rem;
+    padding: 1rem 3.6rem;
     background-color: #181818;
     color: #ebe2db;
+    justify-content: center;
   }
 }
 @media (min-width: 64em) {
@@ -409,7 +410,7 @@ img {
 }
 
 .container {
-  max-width: 71.25rem;
+  max-width: 77.25rem;
   padding: 3.25rem 1rem;
   margin: 0 auto;
 }
@@ -424,12 +425,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   padding: 1rem 1.6rem;
 }
 @media (min-width: 64em) {
   .ui-list--horizontal {
     flex-wrap: nowrap;
+    justify-content: space-around;
   }
 }
 
@@ -441,11 +443,11 @@ img {
   height: 1px;
   background-color: black;
   border: none;
-  margin: 1rem 0;
+  margin: 0.5rem;
 }
 
 .card {
-  padding: 0.5rem;
+  padding: 0.35rem;
 }
 .card__title {
   font-weight: 700;
@@ -456,11 +458,11 @@ img {
 }
 @media (min-width: 64em) {
   .card__content, .card__content--lineVertical {
-    font-size: 1rem;
+    font-size: 1.125rem;
   }
 }
 .card__content--lineVertical {
-  margin: 0 1rem;
+  margin: 0 2rem;
   border-left: 4px solid #e1e0e0;
   padding-left: 1.5rem;
 }
@@ -478,7 +480,11 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
+}
+@media (min-width: 64em) {
+  .header__nav {
+    justify-content: space-between;
+  }
 }
 .header__brand {
   display: flex;
@@ -489,7 +495,7 @@ img {
 }
 @media (min-width: 64em) {
   .header__brand {
-    width: 50%;
+    width: 40%;
   }
 }
 .header__links {
@@ -506,7 +512,8 @@ img {
 @media (min-width: 64em) {
   .header__links {
     position: static;
-    width: auto;
+    width: 50%;
+    margin-right: 4.75rem;
     background: none;
   }
 }
@@ -531,11 +538,11 @@ img {
   }
 }
 .container__main {
-  padding: 0;
+  padding: 0.2rem;
 }
 @media (min-width: 64em) {
   .container__main {
-    padding: 1rem 1.25rem;
+    padding: 0.15rem 1.75rem;
   }
 }
 .container__aside {
@@ -552,26 +559,24 @@ img {
     background-color: #ebe2db;
     height: 240px;
     width: 350px;
-    margin: 2rem 2rem 0 2rem;
+    margin: 2.5rem 2.5rem 0 2.5rem;
   }
 }
 
 .footer {
   background-color: #181818;
-  padding: 1rem;
 }
-.footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin-bottom: 20px;
+@media (min-width: 64em) {
+  .footer {
+    padding: 1rem;
+  }
 }
 @media (min-width: 64em) {
   .footer__links {
+    display: flex;
     flex-direction: row;
-    margin-bottom: 0;
+    justify-content: space-between;
+    margin: 0 3.5rem;
   }
 }
 .footer__links a:hover {

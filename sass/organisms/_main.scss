@@ -16,9 +16,9 @@
   }
 
   &__main {
-    padding: 0;
+    padding: 0.2rem;
     @media (min-width: 64em) {
-      padding: 1rem 1.25rem;
+      padding: 0.15rem 1.75rem;
     }
   }
   &__aside {
@@ -32,7 +32,7 @@
         background-color: variables.$background-cream-color;
         height: 240px;
         width: 350px;
-        margin: 2rem 2rem 0 2rem;
+        margin: 2.5rem 2.5rem 0 2.5rem;
       }
     }
   }
